@@ -14,10 +14,9 @@ const db = knex({
   
   client: 'pg',
   connection: {
-    connectionString: 'postgres://asad:rorDHqXc7cCvL92IeWjqdoM3QFYvJSy6@dpg-cjhkn4s1ja0c7382equ0-a/db_u1em',
-  
+    connectionString: process.env.DATABASE_URL ,
     ssl:true,
-    user:'asad',
+    username:'asad',
     password:'rorDHqXc7cCvL92IeWjqdoM3QFYvJSy6',
     Database:'db_u1em'
   }
